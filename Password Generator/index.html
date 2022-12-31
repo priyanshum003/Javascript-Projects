@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/83b32d52f2.js" crossorigin="anonymous">
+    </script>
+    <!-- favicons -->
+    <link rel="shortcut icon" href="assets/svg/password.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <section id="container">
+        <div class="sub-container">
+            <p class="center label">Password Generator</p>
+            <div class="display">
+
+                <input type="text" value="CLICK ON GENRATE BUTTON" id="copy" class="display-text">
+
+                <div class="tooltip">
+                    <img src="assets/svg/copy-regular.svg" alt="" onclick="copyText()" onmouseout="outFunc()">
+                    <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                </div>
+
+            </div>
+            
+            <div class="setting-display">
+                <p>Password Length <span id="charLen">12</span></p>
+
+                <div class="slidecontainer">
+                    <input type="range" min="8" max="35" value="12" class="slider" id="myRange">
+                </div>
+
+                <div class="checkbox-container">
+                    <div class="checkbox">
+                        <input type="checkbox" class="checkmark" name="" id="lowercase" checked>
+                        <label for="lowercase">Include Lowercase Letters</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" class="checkmark" name="" id="uppercase" checked>
+                        <label for="uppercase">Include Uppercase Letters</label>
+
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" class="checkmark" name="" id="number" checked>
+                        <label for="number">Include Numbers</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" class="checkmark" name="" id="symbols" >
+                        <label for="symbols">Include Symbols</label>
+                    </div>
+                </div>
+
+                <div class="strength-container">
+                    <span>STRENGTH</span>
+                   
+                    <span class="strength-display">
+                        <span id="strength-text"></span>
+                        <div class="strength-box"></div>
+                        <div class="strength-box"></div>
+                        <div class="strength-box"></div>
+                        <div class="strength-box"></div>
+                    </span>
+                </div>
+
+                <div class="genrate ">
+                    <button onclick="runApp()" class="button"> <span>Genrate </span>
+                        <img src="assets/svg/arrow-right-solid.svg" alt="">
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="theme sun-img ">
+            
+        </div>
+    </section>
+    
+    <script src="index.js"></script>
+</body>
+
+</html>

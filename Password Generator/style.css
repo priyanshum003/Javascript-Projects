@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Varela+Round&display=swap');
+
+:root {
+    --bg-color: #131219;
+    --secondary-color: #24232b;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+
+.sub-container {
+    color: whitesmoke;
+    padding: 10px;
+
+}
+
+.sub-container .label {
+    font-family: Roboto;
+    font-size: 1.2rem;
+    color: #777483;
+}
+
+.display {
+    background-color: var(--secondary-color);
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.display-text {
+    font-family: 'Teko', sans-serif;
+    font-weight: 500;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    padding: 10px;
+    width: 85%;
+}
+
+.display img {
+    width: 15px;
+    cursor: pointer;
+}
+
+.setting-display {
+    width: 300px;
+    height: 367px;
+    background-color: var(--secondary-color);
+    margin-top: 15px;
+    font-family: monospace;
+    font-size: 1rem;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.strength-container {
+    display: flex;
+    background-color: #18171f;
+    width: 100%;
+    height: 45px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.strength-container span {
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: .8rem;
+    color: #777483;
+}
+
+.strength-display {
+    display: flex;
+    align-items: center;
+}
+
+span#strength-text {
+    margin: 5px;
+    color: white;
+    font-size: .75rem;
+    font-family: 'Teko', sans-serif;
+    font-weight: 500;
+}
+
+.strength-box {
+    width: 8px;
+    height: 20px;
+    margin: 3px;
+    box-sizing: border-box;
+    border: 2px solid white;
+}
+
+.setting-display p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto';
+}
+
+.setting-display p span {
+    color: #a4ffaf;
+    font-size: 1.2rem;
+
+}
+
+/* -- slider -- */
+
+
+.slider {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    /* outline: none; */
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #a4ffaf;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #a4ffaf;
+    cursor: pointer;
+}
+
+/* -- btn -- */
+.genrate {
+    display: flex;
+    align-items: center;
+}
+
+.genrate button {
+    width: 100%;
+    padding: 10px;
+    background-color: #a4ffaf;
+    border: 0;
+    font-family: Roboto;
+    font-weight: 700;
+    cursor:pointer;
+}
+
+
+
+
+
+
+.genrate img {
+    width: 9px;
+    margin: 0px 5px;
+}
+
+
+/* Checkbox */
+.checkbox input[type=checkbox] {
+    accent-color: #a4ffaf;
+    background-color: transparent;
+}
+
+.checkbox {
+    margin: 10px 0;
+    font-family: 'Roboto';
+    display: flex;
+    align-items: center;
+}
+
+.checkmark {
+    background-color: transparent;
+}
+
+/* -- center-- */
+.center {
+    text-align: center;
+}
+
+/* Copy to clipboard */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Dark Theme */
+
+.theme {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+.sun-img {
+    content: "";
+    background-image: url(assets/svg/sun.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+
+}
+
+
+.dark-mode {
+
+    background-color: black;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+
+/* Range Slideer */
+
+#myRange {
+    -webkit-appearance: none;
+}
+
+/* Button animation */

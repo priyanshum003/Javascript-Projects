@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: black;
+  font-family: Inter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.container {
+  width: 400px;
+  background-color: #252d4a;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+  color: white;
+  box-shadow: 0 0 10px #252d4a;
+}
+
+.question-container {
+  padding: 0 20px;
+}
+
+.answer-container {
+  padding: 10px 20px;
+
+}
+
+.answer {
+  padding: 5px;
+  margin: 10px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.answer label{
+  cursor: pointer;
+}
+
+.button {
+  display: block;
+
+}
+
+.button button {
+  font-family: inherit;
+  width: 100%;
+  padding: 20px;
+  background-color: #00C6C0;
+  color: rgb(255, 255, 255);
+  border: 0;
+  cursor: pointer;
+}
+
+.button button:hover {
+  background-color: #FFF7D6;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.finalMessage {
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  font-size: 2rem;
+}
